@@ -47,7 +47,7 @@ npm run start
 
 ### Demo
 
-![Walkthrough Demo of Backend Requests](https://drive.google.com/file/d/1QB4sVoQ9sg1rpOqU_itbaHuNJAwRJN7S/view)
+[Walkthrough Demo of Backend Requests](https://drive.google.com/file/d/1QB4sVoQ9sg1rpOqU_itbaHuNJAwRJN7S/view)
 
 ### Code Snippets
 
