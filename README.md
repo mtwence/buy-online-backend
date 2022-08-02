@@ -28,7 +28,18 @@ npm install
 
 ## Usage
 
-### Website Demo
+To initialize your database and start the server do the following:
+
+```ruby
+mysql -u root -p
+source ./db/schema.sql
+quit
+
+npm run seed
+npm run start
+```
+
+### Demo
 
 ![alt text]()
 
