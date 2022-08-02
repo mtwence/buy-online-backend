@@ -26,11 +26,11 @@ npm install
 
 ## Technologies Used
 
--Javascript
--Node.js
--Express.js
--MySQL
--Insomnia
+- Javascript
+- Node.js
+- Express.js
+- MySQL
+- Insomnia
 
 ## Usage
 
