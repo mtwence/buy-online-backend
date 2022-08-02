@@ -18,7 +18,7 @@ This is the backend of an ecommerce site using Express.js and MYSQL. There are r
 
 ## Installation
 
-Run this command to install this repositories dependencies:
+Run this command to install this repository's dependencies:
 
 ```ruby
 npm install
