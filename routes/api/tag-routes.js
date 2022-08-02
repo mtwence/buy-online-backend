@@ -10,11 +10,11 @@ router.get('/', async (req, res) => {
     });
     res.status(200).json(tagData);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
     const tagData = await Tag.findByPk(req.params.id, {
       include: [{ model: Product }],
@@ -25,7 +25,7 @@ router.get('/:id', (req, res) => {
     }
     res.status(200).json(tagData);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
 });
 
@@ -49,7 +49,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   try {
     const tagData = await Tag.destroy({
       where: { id: req.params.id },
@@ -57,9 +57,9 @@ router.delete('/:id', (req, res) => {
     if (!tagData) {
       res.status(404).json({ message: "No tag found with that id!" });
     }
-    res.status(200).json(`Deleted ${tagData} Successfully!`);
+    res.status(200).json(`Deleted ${req.params.id} Successfully!`);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
 });
 
